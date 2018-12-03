@@ -33,8 +33,6 @@ public class Second extends AppCompatActivity {
         txtEmail = findViewById(R.id.txtShowEmail);
         txtAge = findViewById(R.id.txtShowAge);
 
-        Button buttonBack=findViewById(R.id.btnBack);
-
         Intent intent=getIntent();
 
         firstNameGet = intent.getStringExtra("personalcontent0");
@@ -49,13 +47,7 @@ public class Second extends AppCompatActivity {
         txtEmail.setText(EmailAdressGet);
         txtAge.setText(AgeGet);
 
-        buttonBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-
-            }
-        });
 
     }
 }
