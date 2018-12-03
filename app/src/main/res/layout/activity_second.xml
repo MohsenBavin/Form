@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second"
+    android:background="@drawable/bachgr2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+       >
+
+        <TextView
+            android:id="@+id/txtHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/timesbi"
+            android:text="hello"
+            android:textColor="@color/colorDarkRed"
+            android:textSize="65sp" />
+
+        <TextView
+            android:id="@+id/txtshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/timesbi"
+            android:text="here is your personal information"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtshow"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/timesbi"
+            android:text="Name"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtShowName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/times"
+            android:text=""
+            android:textColor="@color/colorDarkRed"
+            android:textSize="45sp" />
+        //////////////
+
+        <TextView
+            android:id="@+id/txtNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtShowName"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/timesbi"
+
+            android:text="Phone Number"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtShowNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/times"
+            android:text=""
+            android:textColor="@color/colorDarkRed"
+            android:textSize="45sp" />
+
+        ////////////////////////////////
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtShowNumber"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/timesbi"
+
+            android:text="Email"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtShowEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/times"
+            android:text=""
+            android:textColor="@color/colorDarkRed"
+            android:textSize="45sp" />
+        //////////////////
+
+        <TextView
+            android:id="@+id/txtAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtShowEmail"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/timesbi"
+
+            android:text="Age"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtShowAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/times"
+            android:text=""
+            android:textColor="@color/colorDarkRed"
+            android:textSize="45sp" />
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
