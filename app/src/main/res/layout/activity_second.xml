@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="380dp"
+    android:layout_height="600dp"
     tools:context=".Second"
-    android:background="@drawable/bachgr2">
+    android:background="@drawable/bachgr2"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+  >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,12 +22,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:fontFamily="@font/timesbi"
-            android:text="hello"
+            android:text="hi"
             android:textColor="@color/colorDarkRed"
-            android:textSize="65sp" />
+            android:textSize="45sp" />
 
         <TextView
             android:id="@+id/txtshow"
@@ -31,22 +35,22 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtHi"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="30dp"
             android:fontFamily="@font/timesbi"
             android:text="here is your personal information"
             android:textColor="@color/colorWhite"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/txtshow"
-            android:layout_centerHorizontal="true"
             android:fontFamily="@font/timesbi"
             android:text="Name"
+            android:layout_centerHorizontal="true"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtShowName"
@@ -54,12 +58,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtName"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/times"
             android:text=""
             android:textColor="@color/colorDarkRed"
-            android:textSize="45sp" />
-        //////////////
+            android:textSize="35sp" />
+
 
         <TextView
             android:id="@+id/txtNumber"
@@ -68,10 +72,9 @@
             android:layout_below="@id/txtShowName"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/timesbi"
-
             android:text="Phone Number"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtShowNumber"
@@ -79,13 +82,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtNumber"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="20dp"
             android:fontFamily="@font/times"
             android:text=""
             android:textColor="@color/colorDarkRed"
-            android:textSize="45sp" />
+            android:textSize="20sp" />
 
-        ////////////////////////////////
+
 
         <TextView
             android:id="@+id/txtEmail"
@@ -94,10 +97,9 @@
             android:layout_below="@id/txtShowNumber"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/timesbi"
-
             android:text="Email"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtShowEmail"
@@ -105,11 +107,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtEmail"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="20dp"
             android:fontFamily="@font/times"
             android:text=""
             android:textColor="@color/colorDarkRed"
-            android:textSize="45sp" />
+            android:textSize="25sp" />
         //////////////////
 
         <TextView
@@ -119,10 +121,9 @@
             android:layout_below="@id/txtShowEmail"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/timesbi"
-
             android:text="Age"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtShowAge"
@@ -134,9 +135,37 @@
             android:fontFamily="@font/times"
             android:text=""
             android:textColor="@color/colorDarkRed"
-            android:textSize="45sp" />
+            android:textSize="25sp"
+            />
 
+        <Button
+            android:id="@+id/btnsav"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="SAVE"
+            android:textColor="@color/colorWhite"
+            android:textSize="40sp"
+            android:fontFamily="@font/timesbi"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/txtAge"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="70dp"
 
+            />
+
+        <TextView
+            android:id="@+id/txtsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap SAVE to confirm registration"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:fontFamily="@font/times"
+            android:layout_below="@id/btnsav"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
